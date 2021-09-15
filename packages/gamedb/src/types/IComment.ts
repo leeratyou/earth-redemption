@@ -8,3 +8,5 @@ export interface IComment {
   message: string
   createdAt: string
 }
+
+export type ICommentCreate = Omit<IComment, '_id'>

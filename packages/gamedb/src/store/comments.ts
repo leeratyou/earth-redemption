@@ -1,5 +1,5 @@
 import { makeAutoObservable } from 'mobx'
-import { IComment } from 'types/IComment'
+import { IComment, ICommentCreate } from 'types/IComment'
 
 import comments from 'fixtures/comments'
 import cardsStore from 'store/cards'
@@ -18,6 +18,10 @@ class CommentsStore {
   
   get currentComments() {
     return this.comments.filter(comment => comment.cardId === cardsStore.current?._id).sort(byDate) || []
+  }
+  
+  addComment = async (comment: ICommentCreate) => {
+    this.comments.push({ _id: Date.now(), ...comment })
   }
   
 }

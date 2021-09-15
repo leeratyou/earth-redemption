@@ -30,7 +30,7 @@ const Alert = styled(ErrorOutline)`
 
 function getDate(createdAt: string) {
   const parsed = parseISO(createdAt)
-  if (isToday(parsed)) return format(parsed, 'HH:mm')
+  if (isToday(parsed)) return format(parsed, `'Today at' HH:mm`)
   return format(parsed, `dd MMM 'at' HH:mm`)
 }
 
