@@ -8,7 +8,6 @@ import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord'
 import type { ICard, ICostColors } from 'types/ICard'
 import { Row, Space } from 'ui'
 import { CostColors } from 'types/ICard'
-import CardMeta from './CardMeta'
 
 const W = 18
 const H = W * 1.57
@@ -56,6 +55,7 @@ const Content = styled.div`
 
 const ContentItem = styled.div`
   margin-bottom: 0.5rem;
+  font-size: 0.9rem;
 `
 
 const Traits = styled.div`
@@ -97,14 +97,6 @@ const Cost = styled.div`
   display: flex;
   align-items: center;
 `
-
-// const CostColor = styled.div<{color: string}>`
-//   border-radius: 2rem;
-//   width: 1rem;
-//   height: 1rem;
-//   background-color: ${({ color }) => CostColors[color]};
-//   margin-left: 0.2rem;
-// `
 
 const CostIcon = styled(FiberManualRecordIcon)`
   color: ${props => CostColors[(props.color as keyof ICostColors)]};

@@ -28,8 +28,6 @@ const ViewCard: FC<Props> = () => {
   
   const onChange = (e: any) => setNewComment(e.target.value)
   
-  console.log('--- ViewCard.tsx -> ViewCard -> newComment', newComment)
-  
   const onClose = () => setNewComment('')
   
   return (
@@ -44,6 +42,7 @@ const ViewCard: FC<Props> = () => {
         ? currentComments.map(comment => <Comment key={comment._id} {...comment} />)
         : <Center>No comments yet</Center>
       }
+      <Space height={1} />
       <TextField
         label='Comment'
         multiline

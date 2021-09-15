@@ -16,8 +16,9 @@ const globalStyles = css`
     line-height: 1.15 !important;
     font-size: 1rem !important;
   }
-  .tox {
-    display: none;
+  .w-md-editor-preview {
+    width: 18rem;
+    padding: 1rem;
   }
 `
 

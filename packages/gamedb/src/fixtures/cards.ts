@@ -3,6 +3,7 @@ import { ArmyType, CardType, ICard } from 'types/ICard'
 const cards: ICard[] = [
   {
     _id: 1,
+    version: 1,
     data: {
       name: 'Assault troops',
       army: ArmyType.Alliance,
@@ -25,6 +26,7 @@ const cards: ICard[] = [
   },
   {
     _id: 2,
+    version: 1,
     data: {
       name: 'Control Unit BX-208',
       army: ArmyType.Machine,
@@ -44,6 +46,7 @@ const cards: ICard[] = [
   },
   {
     _id: 3,
+    version: 1,
     data: {
       name: 'Child of Yaghrt',
       army: ArmyType.Treat,
@@ -66,6 +69,7 @@ const cards: ICard[] = [
   },
   {
     _id: 4,
+    version: 1,
     data: {
       name: 'Total Recall',
       army: ArmyType.Cult,
@@ -85,6 +89,7 @@ const cards: ICard[] = [
   },
   {
     _id: 5,
+    version: 1,
     data: {
       name: 'Disarm',
       army: ArmyType.Neutral,
@@ -104,6 +109,7 @@ const cards: ICard[] = [
   },
   {
     _id: 6,
+    version: 1,
     data: {
       name: 'Recycling facility',
       army: ArmyType.Machine,
@@ -123,6 +129,7 @@ const cards: ICard[] = [
   },
   {
     _id: 7,
+    version: 1,
     data: {
       name: 'Spoils',
       army: ArmyType.Machine,

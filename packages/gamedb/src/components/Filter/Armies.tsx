@@ -1,5 +1,6 @@
 import React, { FC, useState } from 'react'
 import styled from 'styled-components'
+import { toJS } from 'mobx'
 import { observer } from 'mobx-react-lite'
 
 import { ToggleButtonGroup, ToggleButton } from '@material-ui/lab'
@@ -20,7 +21,7 @@ const Armies: FC<Props> = observer(() => {
   
   const { cardsStore: { setFilter, filters } } = useStore()
   
-  const onChange = (event: any, newActive: any) => setFilter('army', newActive)
+  const onChange = (event: any, newActive: any) => setFilter('army', event.shiftKey ? [ event.target.value ] : newActive)
   
   return (
     <div>

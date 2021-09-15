@@ -47,6 +47,7 @@ export const ArmyColors: Dict = {
 
 export interface ICard {
   _id: ID
+  version?: number
   data: {
     army: IArmyTypeValue
     name: string

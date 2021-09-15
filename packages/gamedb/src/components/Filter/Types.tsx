@@ -16,7 +16,7 @@ const Button = styled(ToggleButton)`
 const Types: FC<Props> = observer(() => {
   const { cardsStore: { setFilter, filters } } = useStore()
   
-  const onChange = (event: any, newActive: any) => setFilter('type', newActive)
+  const onChange = (event: any, newActive: any) => setFilter('type', event.shiftKey ? [ event.target.value ] : newActive)
   
   return (
     <div>
