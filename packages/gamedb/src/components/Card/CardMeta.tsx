@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import Rating from '@material-ui/lab/Rating'
 
-import { Row, Space } from 'ui'
+import { Row, Space, theme } from 'ui'
 import { ICard, ICardMeta } from 'types/ICard'
 import { observer } from 'mobx-react-lite'
 import { useStore } from 'store'
@@ -15,7 +15,7 @@ const SmallText = styled.div`
 
 const CardMetaWrap = styled(Row)`
   overflow: hidden;
-  width: 18rem;
+  width: ${theme.cardWidth}rem;
 `
 
 const User = styled.div`

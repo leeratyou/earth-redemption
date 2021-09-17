@@ -6,10 +6,10 @@ import StarIcon from '@material-ui/icons/Star'
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord'
 
 import type { ICard, ICostColors } from 'types/ICard'
-import { Row, Space } from 'ui'
+import { Row, Space, theme } from 'ui'
 import { CostColors } from 'types/ICard'
 
-const W = 18
+const W = theme.cardWidth
 const H = W * 1.57
 
 const CardContainer = styled.div`

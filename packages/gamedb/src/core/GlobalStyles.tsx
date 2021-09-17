@@ -3,6 +3,8 @@ import { createGlobalStyle, css } from 'styled-components'
 import 'normalize.css'
 import 'system-font-css'
 
+import { theme } from 'ui'
+
 const globalStyles = css`
   html {
     box-sizing: border-box;
@@ -17,7 +19,7 @@ const globalStyles = css`
     font-size: 1rem !important;
   }
   .w-md-editor-preview {
-    width: 18rem;
+    width: ${theme.cardWidth}rem;
     padding: 1rem;
   }
 `
